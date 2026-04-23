@@ -34,21 +34,7 @@ with st.sidebar:
         st.warning("Profile photo not found in assets/profile.jpg")
     
         st.title("Tathagata Roy Chowdhury")
-        st.markdown("""
-        **Assistant Professor**, Dept. of Computer Science & Engineering  
-        **Techno Engineering College, Banipur** (Techno India Group)  
-        **PhD Research Scholar**, National Institute of Technology (NIT), Silchar 
-        *Specializing in Health Informatics & Medical Imaging Analysis* 
-        """)
-
-            # Quick Stats / Extra Points Row
-        col_stats1, col_stats2, col_stats3 = st.columns(3)
-        with col_stats1:
-            st.metric("Experience", "10+ Years")
-        with col_stats2:
-            st.metric("Publications", "15+ Papers") 
-        with col_stats3:
-            st.metric("Books", "3 Authored") 
+        st.write("Assistant Professor & PhD Researcher")
     
     st.markdown("---")
     st.subheader("🌐 Academic Profiles")
