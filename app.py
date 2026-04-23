@@ -33,7 +33,7 @@ with st.sidebar:
     except:
         st.warning("Profile photo not found in assets/profile.jpg")
     
-   st.title("Tathagata Roy Chowdhury")
+st.title("Tathagata Roy Chowdhury")
 st.markdown("""
 **Assistant Professor**, Dept. of Computer Science & Engineering  
 **Techno Engineering College, Banipur** (Techno India Group)  
