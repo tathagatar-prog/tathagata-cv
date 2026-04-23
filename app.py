@@ -28,7 +28,7 @@ st.markdown("""
 # 3. Sidebar - Profile, Contact & Academic Links
 with st.sidebar:
     try:
-        img = Image.open("profile.JPG")
+        img = Image.open("profie2.jpeg")
         st.image(img, width=230)
     except:
         st.warning("Profile photo not found in assets/profile.jpg")
