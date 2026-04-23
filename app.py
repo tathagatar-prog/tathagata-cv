@@ -70,7 +70,20 @@ st.markdown("""
 Welcome to my official academic showcase. I am a dedicated researcher and educator with over a decade of experience in 
 Computer Science and Engineering, focusing on the intersection of **Artificial Intelligence** and **Healthcare Informatics**.
 """)
-st.info("🎯 Current Research Focus: Federated Learning and Generative AI for Medical Imaging and Cancer Analysis.")
+st.info("🎯 **Primary Research Areas:**")
+research_cols = st.columns(3)
+
+with research_cols[0]:
+    st.markdown("🧬 **Health Informatics**")
+    st.markdown("🖼️ **Medical Image Processing**")
+
+with research_cols[1]:
+    st.markdown("🤖 **Federated Learning**")
+    st.markdown("🧠 **Explainable AI (XAI)**")
+
+with research_cols[2]:
+    st.markdown("🛡️ **Data Security & Steganography**")
+    st.markdown("✨ **Generative AI (GANs/Diffusion)**")
 
 # 5. Career & Skills
 col1, col2 = st.columns([2, 1])
