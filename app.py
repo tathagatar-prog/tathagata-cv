@@ -38,12 +38,12 @@ with st.sidebar:
     
     st.markdown("---")
     st.subheader("🌐 Academic Profiles")
-    st.markdown("[📊 Google Scholar](https://scholar.google.com/citations?user=YOUR_ID)")
-    st.markdown("[🆔 ORCID](https://orcid.org/0000-0000-0000-0000)")
-    st.markdown("[🧬 Semantic Scholar](https://www.semanticscholar.org/)")
+    st.markdown("[📊 Google Scholar](https://scholar.google.com/citations?user=jfW7WkEAAAAJ&hl)")
+    st.markdown("[🆔 ORCID](https://orcid.org/0000-0003-1052-4628)")
+    st.markdown("[🧬 Semantic Scholar](https://www.semanticscholar.org/author/Tathagata-Roy-Chowdhury/2100704574)")
     st.markdown("[🔬 ResearchGate](https://www.researchgate.net/profile/Tathagata-Roy-Chowdhury)")
-    st.markdown("[🎓 Academia.edu](https://independent.academia.edu/)")
-    st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/tathagata-roy-chowdhury/)")
+    st.markdown("[🎓 Academia.edu](https://technoindiauniversity.academia.edu/TathagataRoyChowdhury)")
+    st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/tathagata-roy-chowdhury-877162319/)")
     
     st.markdown("---")
     st.subheader("📩 Contact Details")
