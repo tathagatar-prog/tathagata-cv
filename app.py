@@ -44,12 +44,25 @@ with st.sidebar:
     st.markdown("[🔬 ResearchGate](https://www.researchgate.net/profile/Tathagata-Roy-Chowdhury)")
     st.markdown("[🎓 Academia.edu](https://technoindiauniversity.academia.edu/TathagataRoyChowdhury)")
     st.markdown("[🔗 LinkedIn](https://www.linkedin.com/in/tathagata-roy-chowdhury-877162319/)")
+
+    st.markdown("---")
+    
+    # 1. Personal & Family Section
+    st.subheader("👨‍👩‍👦 Personal Details")
+    st.write("**Gender:** Male")
+    st.write("**Marital Status:** Married")
+    st.write("**Father's Name:** Mr. Jayanta Roy Chowdhury")
+    st.write("**Mother's Name:** Mrs. Mithu Roy Chowdhury")
+    st.write("**Spouse Name:** Mrs. Rhijurekha Roy Chowdhury")
+    st.write("**Son:** Trishaan Roy Chowdhury")
     
     st.markdown("---")
     st.subheader("📩 Contact Details")
-    st.write("📍 Flat No. 3B, Renuka Palace, Kolkata - 700124")
+    st.write("📍 Flat No. 3B, Renuka Palace, Vivekananda Pally , Taki Road, Barasat, Kolkata - 700124")
     st.write("📞 +91 8902503176")
     st.write("📧 tathagatamtech13@gmail.com")
+
+    
     
     # Download CV Button
     try:
