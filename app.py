@@ -60,7 +60,7 @@ with st.sidebar:
     st.subheader("📩 Contact Details")
     st.write("📍 Flat No. 3B, Renuka Palace, Vivekananda Pally , Taki Road, Barasat, Kolkata - 700124")
     st.write("📞 +91 8902503176")
-    st.write("📧 tathagatamtech13@gmail.com")
+    st.write("📧 tathagatamtech13@gmail.com / tathagata.r@tecb.edu.in ")
 
     
     
