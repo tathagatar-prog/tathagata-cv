@@ -200,4 +200,4 @@ with col_aw:
 
 # Footer
 st.markdown("---")
-st.caption("© 2026 Tathagata Roy Chowdhury. Developed using Python & Streamlit.")
+st.caption("© 2026 Tathagata Roy Chowdhury. Asst Professor. Dept of CSE. TIEM")
