@@ -28,13 +28,13 @@ st.markdown("""
 # 3. Sidebar - Profile, Contact & Academic Links
 with st.sidebar:
     try:
-        img = Image.open("profie2.jpeg")
+        img = Image.open("assets/profile.jpg")
         st.image(img, width=230)
     except:
         st.warning("Profile photo not found in assets/profile.jpg")
     
-        st.title("Tathagata Roy Chowdhury")
-        st.write("Assistant Professor & PhD Researcher")
+    st.title("Tathagata Roy Chowdhury")
+    st.write("Assistant Professor & PhD Researcher")
     
     st.markdown("---")
     st.subheader("🌐 Academic Profiles")
