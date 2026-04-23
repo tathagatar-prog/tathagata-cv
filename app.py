@@ -53,7 +53,7 @@ with st.sidebar:
     
     # Download CV Button
     try:
-        with open("assets/CV_Tathagata.pdf", "rb") as pdf_file:
+        with open("CV_Tathagata.pdf", "rb") as pdf_file:
             st.download_button(
                 label="📄 Download Full CV (PDF)",
                 data=pdf_file,
