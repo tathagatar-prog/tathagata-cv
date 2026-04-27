@@ -34,7 +34,7 @@ with st.sidebar:
         st.warning("Profile photo not found in assets/profile.jpg")
     
     st.title("Tathagata Roy Chowdhury")
-    st.write("Assistant Professor & PhD Researcher | Healthcare and Deep Learning Researcher")
+    st.write("Assistant Professor & PhD Researcher | Explainable AI | Bioinformatics | AI Researcher | Tech Strategist")
     
     st.markdown("---")
     st.subheader("🌐 Academic Profiles")
