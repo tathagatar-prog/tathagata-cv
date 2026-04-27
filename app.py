@@ -125,7 +125,6 @@ with col2:
 st.divider()
 st.header("🔬 Research & Intellectual Property")
 
-# --- NEW PATENT SECTION ---
 st.info("💡 **Intellectual Property (Patent Pending)**")
 st.markdown(f"""
 <div class="publication-card">
@@ -138,6 +137,20 @@ st.markdown(f"""
     <i>This framework, known as <b>Bio-Cipher</b>, utilizes 1D-CNNs and Local Differential Privacy (Noise Injection) to enable secure medical collaboration.</i>
 </div>
 """, unsafe_allow_html=True)
+
+# --- ADDED: SMALL LINK/BUTTON FOR PDF ---
+try:
+    with open("BioCipher_Provisional_Specification.pdf", "rb") as pdf_file:
+        st.download_button(
+            label="📄 View Provisional Specification (PDF)",
+            data=pdf_file,
+            file_name="BioCipher_Patent_202631052210.pdf",
+            mime="application/pdf",
+            help="Download the official patent specification filed with the Indian Patent Office."
+        )
+except FileNotFoundError:
+    st.caption("🔗 [Link to Specification Document (PDF)]")
+    st.error("Technical Note: Upload 'BioCipher_Provisional_Specification.pdf' to your root folder to enable the download button.")
 
 # Tabs update: Adding Patent as its own tab or first in Latest
 tab1, tab2, tab3, tab4 = st.tabs(["🚀 Latest & Patents (2025-2026)", "📚 Books Authored", "📄 Journal Archive", "🎤 Conferences & Seminars"])
