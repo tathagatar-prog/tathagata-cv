@@ -123,23 +123,34 @@ with col2:
 
 # 6. Comprehensive Research Section
 st.divider()
-st.header("🔬 Research & Publications")
+st.header("🔬 Research & Intellectual Property")
 
-tab1, tab2, tab3, tab4 = st.tabs(["🚀 Latest (2025-2026)", "📚 Books Authored", "📄 Journal Archive", "🎤 Conferences & Seminars"])
+# --- NEW PATENT SECTION ---
+st.info("💡 **Intellectual Property (Patent Pending)**")
+st.markdown(f"""
+<div class="publication-card">
+    <span style='color: #1e3a8a; font-weight: bold; font-size: 18px;'>
+        🛡️ Indian Provisional Patent Filed
+    </span><br>
+    <b>Title:</b> A Privacy-Preserving and Secured Federated Learning Framework for Decentralized Genomic Data Analysis<br>
+    <b>Application No:</b> <span class='highlight'>202631052210</span> | <b>Filing Date:</b> 24/04/2026<br>
+    <b>Status:</b> Awaiting Complete Specification (Filed & Protected)<br>
+    <i>This framework, known as <b>Bio-Cipher</b>, utilizes 1D-CNNs and Local Differential Privacy (Noise Injection) to enable secure medical collaboration.</i>
+</div>
+""", unsafe_allow_html=True)
+
+# Tabs update: Adding Patent as its own tab or first in Latest
+tab1, tab2, tab3, tab4 = st.tabs(["🚀 Latest & Patents (2025-2026)", "📚 Books Authored", "📄 Journal Archive", "🎤 Conferences & Seminars"])
 
 with tab1:
-    st.subheader("Current High-Impact Research")
+    st.subheader("Current High-Impact Work")
+    st.success("✅ **Patent Pending:** App No. 202631052210 (Genomic Privacy-Preserving FL)")
     st.markdown("""
     * **Advanced DeepLungCareNet:** A Next-Generation Framework for Lung Cancer Prediction. 
         *Published in Springer Nature (LNNS, vol 1691), 2026.*
     * **DeepLungCareNet-FedWeb:** A federated learning web framework for multiclass lung cancer diagnosis. 
         *Accepted at AGC 2026, Kolkata.*
-    * **AFWE-CGFS:** A novel adaptive ensemble architecture combining gradient boosting and neural gating for credit approval. 
-        *Accepted at AGC 2026.*
-    * **Strategic Synthetic Oversampling (SSO):** Benchmark of cGAN versus diffusion models for breast ultrasound classification. 
-        *Accepted at HUMAN 2026, Silchar.*
-    * **Feature-rich Deep Learning for Breast Cancer Detection:** From image analysis to real-time app deployment. 
-        *Accepted at ICSCCA 2025.*
+    * **Bio-Cipher Analysis:** Verified reduction in distributed loss (**0.56 → 0.51**) and local diagnostic accuracy of **74.17%**.
     """)
 
 with tab2:
