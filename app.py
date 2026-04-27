@@ -149,7 +149,7 @@ try:
             help="Download the official patent specification filed with the Indian Patent Office."
         )
 except FileNotFoundError:
-    st.caption("🔗 [Link to Specification Document (PDF)]")
+    st.caption("🔗 [Provisional Application ]")
     st.error("Technical Note: Upload 'BioCipher_Provisional_Specification.pdf' to your root folder to enable the download button.")
 
 # Tabs update: Adding Patent as its own tab or first in Latest
