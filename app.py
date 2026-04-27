@@ -140,7 +140,7 @@ st.markdown(f"""
 
 # --- ADDED: SMALL LINK/BUTTON FOR PDF ---
 try:
-    with open("BioCipher_Provisional_Specification.pdf", "rb") as pdf_file:
+    with open("assets/Patent-Filing_data.pdf", "rb") as pdf_file:
         st.download_button(
             label="📄 View Provisional Specification (PDF)",
             data=pdf_file,
