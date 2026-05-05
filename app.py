@@ -158,14 +158,22 @@ tab1, tab2, tab3, tab4 = st.tabs(["🚀 Latest & Patents (2025-2026)", "📚 Boo
 with tab1:
     st.subheader("Current High-Impact Work")
     st.success("✅ **Patent Pending:** App No. 202631052210 (Genomic Privacy-Preserving FL)")
+    
     st.markdown("""
+    ### 🔬 Primary Research & Publications
     * **Advanced DeepLungCareNet:** A Next-Generation Framework for Lung Cancer Prediction. 
         *Published in Springer Nature (LNNS, vol 1691), 2026.*
     * **DeepLungCareNet-FedWeb:** A federated learning web framework for multiclass lung cancer diagnosis. 
         *Accepted at AGC 2026, Kolkata.*
     * **Bio-Cipher Analysis:** Verified reduction in distributed loss (**0.56 → 0.51**) and local diagnostic accuracy of **74.17%**.
-    """)
 
+    ### 🎓 Mentorship & External Projects
+    * **Unity Healthcare Hospitals:** A Role-Based Hospital Management System.
+        * **Role:** Project Guide
+        * **Student:** Satish Shaw (MCA, Andhra University)
+        * **Tech Stack:** Python & Streamlit
+        * **Focus:** Developing an authentic, role-based management framework for healthcare environments.
+    """)
 with tab2:
     st.subheader("Books & Book Chapters")
     col_b1, col_b2 = st.columns(2)
