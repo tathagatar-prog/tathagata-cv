@@ -127,32 +127,57 @@ with col2:
 st.divider()
 st.header("🔬 Research & Intellectual Property")
 
-st.info("💡 **Intellectual Property (Patent Pending)**")
-st.markdown(f"""
-<div class="publication-card">
-    <span style='color: #1e3a8a; font-weight: bold; font-size: 18px;'>
-        🛡️ Indian Provisional Patent Filed
-    </span><br>
-    <b>Title:</b> A Privacy-Preserving and Secured Federated Learning Framework for Decentralized Genomic Data Analysis<br>
-    <b>Application No:</b> <span class='highlight'>202631052210</span> | <b>Filing Date:</b> 24/04/2026<br>
-    <b>Status:</b> Awaiting Complete Specification (Filed & Protected)<br>
-    <i>This framework, known as <b>Bio-Cipher</b>, utilizes 1D-CNNs and Local Differential Privacy (Noise Injection) to enable secure medical collaboration.</i>
-</div>
-""", unsafe_allow_html=True)
+st.info("💡 **Intellectual Property (Patents & Inventions)**")
 
-# --- ADDED: SMALL LINK/BUTTON FOR PDF ---
-try:
-    with open("assets/Patent-Filing_data.pdf", "rb") as pdf_file:
-        st.download_button(
-            label="📄 View Provisional Specification (PDF)",
-            data=pdf_file,
-            file_name="BioCipher_Patent_202631052210.pdf",
-            mime="application/pdf",
-            help="Download the official patent specification filed with the Indian Patent Office."
-        )
-except FileNotFoundError:
-    st.caption("🔗 [Provisional Application ]")
-    st.error("Technical Note: Upload 'BioCipher_Provisional_Specification.pdf' to your root folder to enable the download button.")
+# Create two clean columns to showcase both patents side-by-side beautifully
+patent_col1, patent_col2 = st.columns(2)
+
+with patent_col1:
+    st.markdown(f"""
+    <div class="publication-card" style="height: 100%;">
+        <span style='color: #1e3a8a; font-weight: bold; font-size: 18px;'>
+            🛡️ Indian Provisional Patent Filed
+        </span><br><br>
+        <b>Title:</b> A Privacy-Preserving and Secured Federated Learning Framework for Decentralized Genomic Data Analysis<br><br>
+        <b>Application No:</b> <span class='highlight'>202631052210</span><br>
+        <b>Filing Date:</b> 24/04/2026<br>
+        <b>Status:</b> Awaiting Complete Specification (Filed & Protected)<br><br>
+        <i>This framework, known as <b>Bio-Cipher</b>, utilizes 1D-CNNs and Local Differential Privacy (Noise Injection) to enable secure medical collaboration.</i>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # --- PDF Button for Indian Patent ---
+    try:
+        with open("assets/Patent-Filing_data.pdf", "rb") as pdf_file:
+            st.download_button(
+                label="📄 View Provisional Specification (PDF)",
+                data=pdf_file,
+                file_name="BioCipher_Patent_202631052210.pdf",
+                mime="application/pdf",
+                key="btn_patent_in",
+                help="Download the official patent specification filed with the Indian Patent Office."
+            )
+    except FileNotFoundError:
+        st.caption("🔗 [Provisional Application]")
+
+with patent_col2:
+    st.markdown(f"""
+    <div class="publication-card" style="height: 100%;">
+        <span style='color: #0d9488; font-weight: bold; font-size: 18px;'>
+            🇬🇧 UK Design Patent (Application Stage)
+        </span><br><br>
+        <b>Title:</b> Blockchain-Secured Health Data Retrieval Device<br><br>
+        <b>Jurisdiction:</b> United Kingdom Patent Office<br>
+        <b>Author Position:</b> 6th Co-Inventor<br>
+        <b>Status:</b> Design Registration & Grant Application Under Process<br><br>
+        <i>An innovative hardware-software co-design utilizing a decentralized blockchain ledger to ensure secure, tamper-proof, and rapid retrieval of critical healthcare data.</i>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Placeholder layout since there's no download file yet
+    st.caption("📂 *Official UK filing documentation pending group distribution.*")
+
+st.markdown("<br>", unsafe_allow_html=True)
 
 # Tabs update: Adding Patent as its own tab or first in Latest
 tab1, tab2, tab3, tab4 = st.tabs(["🚀 Latest & Patents (2025-2026)", "📚 Books Authored", "📄 Journal Archive", "🎤 Conferences & Seminars"])
