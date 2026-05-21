@@ -145,20 +145,6 @@ with patent_col1:
         <i>This framework, known as <b>Bio-Cipher</b>, utilizes 1D-CNNs and Local Differential Privacy (Noise Injection) to enable secure medical collaboration.</i>
     </div>
     """, unsafe_allow_html=True)
-    
-    # --- PDF Button for Indian Patent ---
-    try:
-        with open("assets/Patent-Filing_data.pdf", "rb") as pdf_file:
-            st.download_button(
-                label="📄 View Provisional Specification (PDF)",
-                data=pdf_file,
-                file_name="BioCipher_Patent_202631052210.pdf",
-                mime="application/pdf",
-                key="btn_patent_in",
-                help="Download the official patent specification filed with the Indian Patent Office."
-            )
-    except FileNotFoundError:
-        st.caption("🔗 [Provisional Application]")
 
 with patent_col2:
     st.markdown(f"""
@@ -173,9 +159,24 @@ with patent_col2:
         <i>An innovative hardware-software co-design utilizing a decentralized blockchain ledger to ensure secure, tamper-proof, and rapid retrieval of critical healthcare data.</i>
     </div>
     """, unsafe_allow_html=True)
-    
-    # Placeholder layout since there's no download file yet
-    st.caption("📂 *Official UK filing documentation pending group distribution.*")
+
+# --- Editorial & High-Volume Metrics Status Block ---
+st.markdown("<br>", unsafe_allow_html=True)
+st.subheader("📊 Editorial & High-Impact Contributions")
+
+metric_col1, metric_col2, metric_col3 = st.columns(3)
+
+with metric_col1:
+    st.metric(label="✅ ICESAIA 2026 Panel", value="Active Reviewer", delta="Reviewer Console")
+    st.caption("Evaluating cutting-edge submissions across Deep Learning, Medical Informatics, and IoT architectures.")
+
+with metric_col2:
+    st.metric(label="📚 Bentham Science (Scopus)", value="12 Chapters", delta="Accepted / In Press")
+    st.caption("Contributed a high volume of specialized research chapters across upcoming scientific volumes.")
+
+with metric_col3:
+    st.metric(label="🎤 AMESOM 2026 (Scopus)", value="3 Papers", delta="Accepted")
+    st.caption("Presenting upcoming original research frameworks at this premier indexed international conference.")
 
 st.markdown("<br>", unsafe_allow_html=True)
 
@@ -193,6 +194,7 @@ with tab1:
     * **DeepLungCareNet-FedWeb:** A federated learning web framework for multiclass lung cancer diagnosis. 
         *Accepted at AGC 2026, Kolkata.*
     * **Bio-Cipher Analysis:** Verified reduction in distributed loss (**0.56 → 0.51**) and local diagnostic accuracy of **74.17%**.
+    * **Scopus Conference Track:** 3 research papers accepted for upcoming presentation and publication at **AMESOM 2026**.
 
     ### 🎓 Mentorship & External Projects
     * **Unity Healthcare Hospitals:** A Role-Based Hospital Management System.
@@ -201,22 +203,41 @@ with tab1:
         * **Tech Stack:** Python & Streamlit
         * **Focus:** Developing an authentic, role-based management framework for healthcare environments.
     """)
+
 with tab2:
     st.subheader("Books & Book Chapters")
-    col_b1, col_b2 = st.columns(2)
-    with col_b1:
-        st.write("📖 **A Complete Overview on Web Technology** (2026)")
-        st.caption("Taurean Publications | ISBN: 978-93-4731-003-4")
-        st.write("📖 **Unveiling the Black Box: Practical Deep Learning and XAI** (2024)")
-        st.caption("Lambert Academic Publishing")
-    with col_b2:
-        st.write("📖 **Anomaly Detection in Log Files** (2024)")
-        st.caption("Lambert Academic Publishing | ISBN: 978-620-7-80706-2")
-        st.write("📖 **A Pathway to J.E.C.A.** (2023)")
-        st.caption("Amazon Kindle Edition | ASIN: B0C8RTG1KJ")
     
+    st.info("📖 **Active Curriculum Development (MAKAUT BCA New NEP Syllabus)**")
+    bca_col1, bca_col2 = st.columns(2)
+    with bca_col1:
+        st.write("📘 **Textbook I: Core Computational Track**")
+        st.caption("Currently authoring a comprehensive volume tailored specifically to the updated MAKAUT NEP curriculum requirements.")
+    with bca_col2:
+        st.write("orange **Textbook II: Advanced Application Systems**")
+        st.caption("Structuring content to align modern technology implementations with upcoming state university benchmarks.")
+
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.success("🔬 **Advanced Research Monograph Proposals**")
+    st.markdown("""
+    <div class="publication-card" style="border-left: 5px solid #22c55e;">
+        <span style='color: #15803d; font-weight: bold; font-size: 17px;'>
+            📔 Synthetic Over-Sampling for Medical Image Classification
+        </span><br>
+        <small style='color: #6b7280;'>Subtitle: From GANs and Diffusion Models to Clinical Deployment</small><br><br>
+        <b>Target Publisher:</b> Cambridge Scholars Publishing <i>(In distribution partnership with Taylor & Francis Group)</i><br>
+        <b>Key Research Scope:</b> 
+        <ul>
+            <li>Bridging data scarcity in rare disease diagnostics using Conditional GANs (cGANs) and Latent Diffusion Models (LDMs).</li>
+            <li>Introducing structured, benchmarked <b>Strategic Synthetic Oversampling (SSO)</b> frameworks.</li>
+            <li>Validation using Explainable AI (XAI) metrics (Grad-CAM, SHAP) to eliminate hallucinations in Breast Ultrasound and Histopathology datasets.</li>
+        </ul>
+        <b>Status:</b> Official Book Proposal & Chapter Outline Invited
+    </div>
+    """, unsafe_allow_html=True)
+
     st.markdown("---")
     st.write("**Significant Book Chapters:**")
+    st.write("- *12 Peer-Reviewed Chapters Accepted & In Press*, **Bentham Science (Scopus Indexed)** (2026).")
     st.write("- *AI-driven Environmental Sustainability*, Wiley + IEEE Press (2026).")
     st.write("- *AI-powered OCR and Healthcare Informatics in Industry 5.0*, Bentham Science (2026).")
 
@@ -233,8 +254,8 @@ with tab4:
     st.write("✅ **Resource Person:** Parallel Architecture Workshop.")
     st.write("✅ **Session Chair:** Multiple International Conferences.")
     st.write("✅ **Workshop Participant:** Emerging Technologies (MAKAUT, 2026).")
-    st.write("✅ **Reviewer:** Analytics Global Conference (2026) and IEEE ICESAIA (2026).")
-
+    st.write("✅ **Reviewer Panel:** ICESAIA 2026 International Conference (Actively reviewing technical tracks across AI, IoT, and Cloud systems).")
+    st.write("✅ **Reviewer:** Analytics Global Conference (2026).")
 # 7. Professional Journey
 st.divider()
 st.header("💼 Employment History")
