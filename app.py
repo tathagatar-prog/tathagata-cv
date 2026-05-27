@@ -196,7 +196,7 @@ with tab1:
     st.subheader("Current High-Impact Work")
     st.success("✅ **Patent Pending:** App No. 202631052210 (Genomic Privacy-Preserving FL)")
     
-   st.markdown("""
+st.markdown("""
 ### 🔬 Primary Research & Publications
 
 * **Advanced DeepLungCareNet:** A Next-Generation Framework for Lung Cancer Prediction.  
