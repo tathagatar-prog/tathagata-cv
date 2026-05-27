@@ -157,7 +157,6 @@ with patent_col2:
         <b>Filing Date:</b> 26/05/2026<br>
         <b>Author Position:</b> 6th Co-Inventor<br>
         <b>Status:</b> Filed<br><br>
-
         <i>    A UK registered design application focused on secure blockchain-enabled healthcare data retrieval architecture.    </i>
    </div>
     """, unsafe_allow_html=True)
