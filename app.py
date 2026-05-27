@@ -133,22 +133,33 @@ st.info("💡 **Intellectual Property (Patents & Inventions)**")
 patent_col1, patent_col2 = st.columns(2)
 
 with patent_col1:
-    st.markdown(f"""
+    st.markdown("""
     <div class="publication-card" style="height: 100%;">
+
         <span style='color: #1e3a8a; font-weight: bold; font-size: 18px;'>
-            🛡️ Indian Provisional Patent Filed
+            🛡️ Indian Provisional Patent Application
         </span><br><br>
+
         <b>Title:</b> A Privacy-Preserving and Secured Federated Learning Framework for Decentralized Genomic Data Analysis<br><br>
-        <b>Application No:</b> <span class='highlight'>202631052210</span><br>
-        <b>Filing Date:</b> 24/04/2026<br>
-        <b>Status:</b> Awaiting Complete Specification (Filed & Protected)<br><br>
-        <i>This framework, known as <b>Bio-Cipher</b>, utilizes 1D-CNNs and Local Differential Privacy (Noise Injection) to enable secure medical collaboration.</i>
+
+        <b>Application No.:</b> <span class='highlight'>202631052210</span><br>
+        <b>Filed On:</b> 24 April 2026<br>
+        <b>Status:</b> Provisional Specification Filed<br><br>
+
+        <i>
+        This framework, known as <b>Bio-Cipher</b>, integrates 1D-CNN architectures
+        with Local Differential Privacy (Noise Injection) techniques to enable secure,
+        decentralized medical data collaboration and genomic analysis.
+        </i>
+
     </div>
     """, unsafe_allow_html=True)
 
+
 with patent_col2:
-    st.markdown(f"""
+    st.markdown("""
     <div class="publication-card" style="height: 100%;">
+
         <span style='color: #0d9488; font-weight: bold; font-size: 18px;'>
             🇬🇧 UK Registered Design Application
         </span><br><br>
@@ -157,15 +168,16 @@ with patent_col2:
 
         <b>Application No.:</b> 6528955<br>
         <b>Filed With:</b> United Kingdom Intellectual Property Office (UKIPO)<br>
-        <b>Filing Date:</b> 26 May 2026<br>
+        <b>Filed On:</b> 26 May 2026<br>
         <b>Author Position:</b> 6th Co-Inventor<br>
         <b>Status:</b> Filed / Under Examination<br><br>
 
         <i>
         An innovative healthcare data retrieval framework integrating blockchain-enabled
-        security mechanisms for tamper-resistant, secure, and efficient access to critical
-        medical information through a decentralized architecture.
+        security mechanisms for tamper-resistant, secure, and efficient access to
+        critical medical information through a decentralized architecture.
         </i>
+
     </div>
     """, unsafe_allow_html=True)
 
