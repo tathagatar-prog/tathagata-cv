@@ -150,13 +150,22 @@ with patent_col2:
     st.markdown(f"""
     <div class="publication-card" style="height: 100%;">
         <span style='color: #0d9488; font-weight: bold; font-size: 18px;'>
-            🇬🇧 UK Design Patent (Application Stage)
+            🇬🇧 UK Registered Design Application
         </span><br><br>
+
         <b>Title:</b> Blockchain-Secured Health Data Retrieval Device<br><br>
-        <b>Jurisdiction:</b> United Kingdom Patent Office<br>
+
+        <b>Application No.:</b> 6528955<br>
+        <b>Filed With:</b> United Kingdom Intellectual Property Office (UKIPO)<br>
+        <b>Filing Date:</b> 26 May 2026<br>
         <b>Author Position:</b> 6th Co-Inventor<br>
-        <b>Status:</b> Design Registration & Grant Application Under Process<br><br>
-        <i>An innovative hardware-software co-design utilizing a decentralized blockchain ledger to ensure secure, tamper-proof, and rapid retrieval of critical healthcare data.</i>
+        <b>Status:</b> Filed / Under Examination<br><br>
+
+        <i>
+        An innovative healthcare data retrieval framework integrating blockchain-enabled
+        security mechanisms for tamper-resistant, secure, and efficient access to critical
+        medical information through a decentralized architecture.
+        </i>
     </div>
     """, unsafe_allow_html=True)
 
