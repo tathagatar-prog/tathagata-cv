@@ -142,7 +142,7 @@ with patent_col1:
         <b>Application No:</b> <span class='highlight'>202631052210</span><br>
         <b>Filing Date:</b> 24/04/2026<br>
         <b>Status:</b> Awaiting Complete Specification (Filed & Protected)<br><br>
-        <i>This framework, known as <b>Bio-Cipher</b>, utilizes 1D-CNNs and Local Differential Privacy (Noise Injection) to enable secure medical collaboration.</i>
+        <i> This framework, known as <b>Bio-Cipher</b>, utilizes 1D-CNNs and Local Differential Privacy (Noise Injection) to enable secure medical collaboration. </i>
     </div>
     """, unsafe_allow_html=True)
 
