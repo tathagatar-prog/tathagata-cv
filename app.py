@@ -218,11 +218,6 @@ tab1, tab2, tab3, tab4 = st.tabs(
         "🎤 Conferences & Awards"
     ]
 )
-
-# ============================================================
-# TAB 1
-# ============================================================
-
 with tab1:
 
     st.subheader("Current High-Impact Research")
@@ -270,7 +265,6 @@ with tab1:
   **Best Technical Presentation Award**
   at AMESEOM 2026.
 """)
-```
 
 
 with tab2:
