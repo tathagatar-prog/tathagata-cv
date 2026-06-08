@@ -160,8 +160,6 @@ with patent_col2:
         <i>    A UK registered design application focused on secure blockchain-enabled healthcare data retrieval architecture.    </i>
    </div>
     """, unsafe_allow_html=True)
-
-```python
 # --- Editorial, Research Impact & Recognition ---
 st.markdown("<br>", unsafe_allow_html=True)
 st.subheader("📊 Research Impact & Academic Contributions")
