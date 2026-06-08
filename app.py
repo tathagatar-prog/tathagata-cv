@@ -161,58 +161,117 @@ with patent_col2:
    </div>
     """, unsafe_allow_html=True)
 
-# --- Editorial & High-Volume Metrics Status Block ---
+```python
+# --- Editorial, Research Impact & Recognition ---
 st.markdown("<br>", unsafe_allow_html=True)
-st.subheader("📊 Editorial & High-Impact Contributions")
+st.subheader("📊 Research Impact & Academic Contributions")
 
-metric_col1, metric_col2, metric_col3 = st.columns(3)
+metric_col1, metric_col2, metric_col3, metric_col4 = st.columns(4)
 
 with metric_col1:
-    st.metric(label="✅ ICESAIA 2026 Panel", value="Active Reviewer", delta="Reviewer Console")
-    st.caption("Evaluating cutting-edge submissions across Deep Learning, Medical Informatics, and IoT architectures.")
+    st.metric(
+        label="✅ ICESAIA 2026",
+        value="Reviewer",
+        delta="IEEE Conference"
+    )
+    st.caption(
+        "Reviewer for international submissions in AI, IoT, Healthcare Informatics and Emerging Technologies."
+    )
 
 with metric_col2:
-    st.metric(label="📚 Bentham Science (Scopus)", value="12 Chapters", delta="Accepted / In Press")
-    st.caption("Contributed a high volume of specialized research chapters across upcoming scientific volumes.")
+    st.metric(
+        label="📚 Bentham Science",
+        value="12 Chapters",
+        delta="Accepted / In Press"
+    )
+    st.caption(
+        "Contributor to multiple Scopus-indexed edited volumes covering AI, Healthcare Informatics and Industry 5.0."
+    )
 
 with metric_col3:
-    st.metric(label="🎤 AMESOM 2026 (Scopus)", value="3 Papers", delta="Accepted")
-    st.caption("Presenting upcoming original research frameworks at this premier indexed international conference.")
+    st.metric(
+        label="🎤 AMESEOM 2026",
+        value="3 Papers",
+        delta="Accepted"
+    )
+    st.caption(
+        "Three healthcare-AI focused papers accepted in the International Conference Book of Abstracts."
+    )
+
+with metric_col4:
+    st.metric(
+        label="🏆 Student Achievement",
+        value="Best Presentation",
+        delta="AMESEOM 2026"
+    )
+    st.caption(
+        "Student team received the Best Technical Presentation Award under academic supervision."
+    )
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# Tabs update: Adding Patent as its own tab or first in Latest
-tab1, tab2, tab3, tab4 = st.tabs(["🚀 Latest & Patents (2025-2026)", "📚 Books Authored", "📄 Journal Archive", "🎤 Conferences & Seminars"])
+tab1, tab2, tab3, tab4 = st.tabs(
+    [
+        "🚀 Latest Research & Patents",
+        "📚 Books & Chapters",
+        "📄 Publications",
+        "🎤 Conferences & Awards"
+    ]
+)
+
+# ============================================================
+# TAB 1
+# ============================================================
 
 with tab1:
-    st.subheader("Current High-Impact Work")
-    st.success("✅ **Patent Pending:** App No. 202631052210 (Genomic Privacy-Preserving FL)")
-    
-st.markdown("""
-### 🔬 Primary Research & Publications
 
-* **Advanced DeepLungCareNet:** A Next-Generation Framework for Lung Cancer Prediction.  
-    *Published in Springer Nature (LNNS, Vol. 1691), 2026.*
+    st.subheader("Current High-Impact Research")
 
-* **DeepLungCareNet-FedWeb:** A Federated Learning Web Framework for Multiclass Lung Cancer Diagnosis.  
-    *Accepted at AGC 2026, Kolkata.*
+    st.success(
+        "✅ Indian Patent Filed: Application No. 202631052210 "
+        "(Privacy-Preserving Federated Learning for Genomic Data Analysis)"
+    )
 
-* **Intelligent PCOS Prediction Framework using CatBoost and AI-Based Clinical Report Generation**  
-    *Laha, N., Mazumder, P. & Ghorui, L. (2026).*  
-    DOI: https://doi.org/10.55041/ijsmt.v2i5.343
+    st.info(
+        "🇬🇧 UK Registered Design Filed: Blockchain-Secured Health Data Retrieval Device"
+    )
 
-* **Bio-Cipher Analysis:** Verified reduction in distributed loss (**0.56 → 0.51**) and local diagnostic accuracy of **74.17%**.
+    st.markdown("""
+### 🔬 Featured Research Contributions
 
-* **Scopus Conference Track:** 3 research papers accepted for upcoming presentation and publication at **AMESOM 2026**.
+* **Advanced DeepLungCareNet**
+  - Springer Nature (LNNS Series), 2026
+  - Deep Learning Framework for Multiclass Lung Cancer Prediction
 
-### 🎓 Mentorship & External Projects
+* **DeepLungCareNet-FedWeb**
+  - Accepted at AGC 2026
+  - Federated Learning Enabled Lung Cancer Diagnostic Framework
 
-* **Unity Healthcare Hospitals:** A Role-Based Hospital Management System.
-    * **Role:** Project Guide
-    * **Student:** Satish Shaw (MCA, Andhra University)
-    * **Tech Stack:** Python & Streamlit
-    * **Focus:** Developing an authentic, role-based management framework for healthcare environments.
+* **Bio-Cipher**
+  - Privacy-Preserving Federated Learning Architecture
+  - Distributed Loss Reduced from 0.56 → 0.51
+
+* **Intelligent PCOS Prediction Framework**
+  - CatBoost-based Clinical Prediction and Automated Report Generation
+  - DOI: https://doi.org/10.55041/ijsmt.v2i5.343
+
+### 🎓 Research Mentorship & Student Innovation
+
+* Successfully supervised multiple undergraduate AI research projects.
+
+* Guided students in publishing and presenting research papers at AMESEOM 2026.
+
+* Research areas included:
+    - Biomedical Waste Classification
+    - Parkinson's Disease Screening using Deep Learning
+    - Clinical Decision Support Systems using NLP
+
+* One supervised student research team received the
+  **Best Technical Presentation Award**
+  at AMESEOM 2026.
 """)
+```
+
 
 with tab2:
     st.subheader("Books & Book Chapters")
