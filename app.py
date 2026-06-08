@@ -113,7 +113,6 @@ with col1:
     Beyond research, I have a strong track record of academic leadership, having served as an In-Charge and 
     Academic Advisor across several prestigious engineering colleges in West Bengal.
     """)
-
 with col2:
     st.header("⚙️ Technical Expertise")
     st.write("**Core Domains:**")
