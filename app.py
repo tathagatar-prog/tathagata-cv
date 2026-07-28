@@ -122,42 +122,91 @@ with col2:
     st.write("**Tools & Frameworks:**")
     st.write("TensorFlow, PyTorch, Oracle Database, ERP Systems")
 
-# 6. Comprehensive Research Section
 st.divider()
 st.header("🔬 Research & Intellectual Property")
 
 st.info("💡 **Intellectual Property (Patents & Inventions)**")
 
-# Create two clean columns to showcase both patents side-by-side beautifully
+# Create two clean columns to showcase both intellectual properties
 patent_col1, patent_col2 = st.columns(2)
 
 with patent_col1:
-    st.markdown(f"""
-    <div class="publication-card" style="height: 100%;">
-        <span style='color: #1e3a8a; font-weight: bold; font-size: 18px;'>
-            🛡️ Indian Provisional Patent Filed
+    st.markdown("""
+    <div class="publication-card" style="height:100%;">
+        <span style="color:#1e3a8a;font-weight:bold;font-size:18px;">
+            🛡️ Indian Patent
         </span><br><br>
-        <b>Title:</b> A Privacy-Preserving and Secured Federated Learning Framework for Decentralized Genomic Data Analysis<br><br>
-        <b>Application No:</b> <span class='highlight'>202631052210</span><br>
+
+        <b>Title:</b><br>
+        A Privacy-Preserving and Secured Federated Learning Framework for Decentralized Genomic Data Analysis
+        <br><br>
+
+        <b>Application No.:</b>
+        <span class="highlight">202631052210</span><br>
+
         <b>Filing Date:</b> 24/04/2026<br>
-        <b>Status:</b> Awaiting Complete Specification (Filed & Protected)<br><br>
-        <i> This framework, known as <b>Bio-Cipher</b>, utilizes 1D-CNNs and Local Differential Privacy (Noise Injection) to enable secure medical collaboration. </i>
+
+        <b>Status:</b>
+        <span style="background:#dcfce7;
+                     color:#166534;
+                     padding:4px 10px;
+                     border-radius:12px;
+                     font-weight:bold;">
+            ✅ Approved
+        </span>
+
+        <br><br>
+
+        <i>
+        This invention, known as <b>Bio-Cipher</b>, proposes a privacy-preserving
+        Federated Learning framework utilizing 1D-CNNs and Local Differential
+        Privacy (Noise Injection) for secure decentralized genomic and healthcare
+        data analysis.
+        </i>
     </div>
     """, unsafe_allow_html=True)
 
+
 with patent_col2:
-    st.markdown(f"""
-    <div class="publication-card" style="height: 100%;">
-        <span style='color: #0d9488; font-weight: bold; font-size: 18px;'>🇬🇧 UK Registered Design Application
+    st.markdown("""
+    <div class="publication-card" style="height:100%;">
+        <span style="color:#0d9488;font-weight:bold;font-size:18px;">
+            🇬🇧 UK Registered Design
         </span><br><br>
-        <b>Title:</b> Blockchain-Secured Health Data Retrieval Device<br><br>
-        <b>Application No.:</b> 6528955<br>
-        <b>Filed With:</b> United Kingdom IP Office<br>
-        <b>Filing Date:</b> 26/05/2026<br>
-        <b>Author Position:</b> 6th Co-Inventor<br>
-        <b>Status:</b> Filed<br><br>
-        <i>    A UK registered design application focused on secure blockchain-enabled healthcare data retrieval architecture.    </i>
-   </div>
+
+        <b>Title:</b><br>
+        Blockchain-Secured Health Data Retrieval Device
+        <br><br>
+
+        <b>Design No.:</b>
+        <span class="highlight">6528955</span><br>
+
+        <b>Registered With:</b>
+        United Kingdom Intellectual Property Office (UKIPO)<br>
+
+        <b>Registration Date:</b> 26/05/2026<br>
+
+        <b>Grant Date:</b> 04/06/2026<br>
+
+        <b>Author Position:</b> 6<sup>th</sup> Co-Inventor<br>
+
+        <b>Status:</b>
+        <span style="background:#dcfce7;
+                     color:#166534;
+                     padding:4px 10px;
+                     border-radius:12px;
+                     font-weight:bold;">
+            🏆 Registered
+        </span>
+
+        <br><br>
+
+        <i>
+        A registered UK design focused on a blockchain-enabled healthcare
+        data retrieval device that ensures secure, tamper-resistant access
+        to medical records while preserving data integrity and privacy.
+        </i>
+    </div>
     """, unsafe_allow_html=True)
     
 # --- Editorial, Research Impact & Recognition --
