@@ -186,12 +186,11 @@ with tab1:
     st.subheader("Current High-Impact Research")
 
     st.success(
-        "✅ Indian Patent Filed: Application No. 202631052210 "
-        "(Privacy-Preserving Federated Learning for Genomic Data Analysis)"
+    "🏆 Indian Patent Approved | Application No. 202631052210 (Bio-Cipher: Privacy-Preserving Federated Learning for Genomic Data Analysis)"
     )
 
-    st.info(
-        "🇬🇧 UK Registered Design Filed: Blockchain-Secured Health Data Retrieval Device"
+    st.success(
+        "🇬🇧 UK Registered Design Patent Filed | Design No. 6528955 | Blockchain-Secured Health Data Retrieval Device"
     )
 
     st.markdown("""
