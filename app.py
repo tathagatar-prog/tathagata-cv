@@ -187,15 +187,15 @@ with tab1:
 
     st.success(
     "🏆 Indian Patent Approved | Application No. 202631052210 | Bio-Cipher: Privacy-Preserving Federated Learning for Genomic Data Analysis"
-)
+    )
 
-st.success(
+    st.success(
     "🇬🇧 UK Registered Design Patent Filed | Design No. 6528955 | Blockchain-Secured Health Data Retrieval Device"
-)
+    )
 
-st.success(
+    st.success(
     "🇬🇧 UK Registered Design Granted | Design No. 6544078 | AI-Powered Medical Device for Early Detection of Oral Cancer | Grant Date: 17 August 2026"
-)
+    )
 
     st.markdown("""
 ### 🔬 Featured Research Contributions
