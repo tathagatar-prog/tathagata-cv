@@ -190,7 +190,7 @@ with tab1:
     )
 
     st.success(
-    "🇬🇧 UK Registered Design Patent Filed | Design No. 6528955 | Blockchain-Secured Health Data Retrieval Device"
+    "🇬🇧 UK Registered Design Patent Filed | Design No. 6528955 | Blockchain-Secured Health Data Retrieval Device | Grant Date: 04 June 2026"
     )
 
     st.success(
