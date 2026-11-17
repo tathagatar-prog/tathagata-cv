@@ -21,40 +21,146 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    .stApp { background: #f5f7fb; }
-    [data-testid="stSidebar"] { background: #edf1f8; }
-    .hero {
-        padding: 1.7rem 1.8rem;
-        border-radius: 18px;
-        background: linear-gradient(120deg, #102a43, #243b67);
-        color: white;
-        margin-bottom: 1.2rem;
+    /* ---------- Light AI-inspired visual system ---------- */
+    :root {
+        --ink: #172554;
+        --muted: #64748b;
+        --blue: #2563eb;
+        --cyan: #06b6d4;
+        --violet: #8b5cf6;
+        --pink: #ec4899;
+        --surface: rgba(255,255,255,.88);
+        --line: rgba(148,163,184,.22);
     }
-    .hero h1, .hero h3, .hero p { color: white !important; }
-    .eyebrow {
-        color: #b9d5ff;
-        font-size: .85rem;
-        text-transform: uppercase;
-        letter-spacing: .12em;
-        font-weight: 700;
+
+    .stApp {
+        background:
+            radial-gradient(ellipse at 8% 4%, rgba(6,182,212,.13), transparent 27%),
+            radial-gradient(ellipse at 92% 9%, rgba(139,92,246,.13), transparent 28%),
+            radial-gradient(ellipse at 80% 75%, rgba(236,72,153,.08), transparent 30%),
+            linear-gradient(135deg, #f7fbff 0%, #f4f5ff 48%, #fff8fc 100%);
+        color: var(--ink);
     }
-    .section-note { color: #526176; }
-    .publication-card {
-        background: white;
-        border: 1px solid #e4e9f2;
-        border-left: 4px solid #315b96;
-        border-radius: 10px;
-        padding: 1rem 1.1rem;
-        margin: .65rem 0;
+
+    [data-testid="stHeader"] { background: transparent; }
+    [data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #eef8ff 0%, #f4f0ff 55%, #fff5fa 100%);
+        border-right: 1px solid rgba(148,163,184,.2);
     }
+    [data-testid="stSidebar"] > div { background: transparent; }
+
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        max-width: 1440px;
+    }
+
+    h1, h2, h3, h4 { color: #172554; letter-spacing: -.025em; }
+    p, li, label, .stMarkdown { color: #334155; }
     .small-muted { color: #64748b; font-size: .9rem; }
-    div[data-testid="stMetric"] {
-        background: white;
-        border: 1px solid #e4e9f2;
-        padding: 12px 14px;
-        border-radius: 12px;
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 2.4rem 2.2rem;
+        border-radius: 25px;
+        color: #172554;
+        background:
+            radial-gradient(circle at 88% 18%, rgba(255,255,255,.9) 0 4%, transparent 4.5%),
+            radial-gradient(circle at 93% 80%, rgba(6,182,212,.22), transparent 23%),
+            radial-gradient(circle at 72% 10%, rgba(236,72,153,.17), transparent 25%),
+            linear-gradient(115deg, rgba(255,255,255,.96), rgba(239,246,255,.94) 48%, rgba(250,245,255,.96));
+        border: 1px solid rgba(129,140,248,.25);
+        box-shadow: 0 18px 55px rgba(59,91,160,.12);
+        margin-bottom: 1.5rem;
     }
-    a { text-decoration: none; }
+    .hero:after {
+        content: "";
+        position: absolute;
+        width: 240px; height: 240px;
+        right: -65px; top: -95px;
+        border-radius: 50%;
+        border: 1px solid rgba(99,102,241,.18);
+        box-shadow: 0 0 0 22px rgba(99,102,241,.035),
+                    0 0 0 48px rgba(6,182,212,.035);
+        pointer-events: none;
+    }
+    .hero h1 {
+        color: #172554 !important;
+        font-size: clamp(2rem, 4vw, 3.35rem);
+        font-weight: 850;
+        line-height: 1.08;
+        margin: .35rem 0 .65rem;
+    }
+    .hero h3 { color: #31518b !important; font-weight: 650; }
+    .hero p { color: #475569 !important; max-width: 850px; }
+    .eyebrow {
+        display: inline-block;
+        color: #5b4bd8;
+        background: rgba(139,92,246,.10);
+        border: 1px solid rgba(139,92,246,.16);
+        padding: .35rem .75rem;
+        border-radius: 999px;
+        font-size: .75rem;
+        text-transform: uppercase;
+        letter-spacing: .14em;
+        font-weight: 800;
+    }
+
+    .publication-card {
+        background: rgba(255,255,255,.88);
+        border: 1px solid rgba(148,163,184,.2);
+        border-left: 4px solid #6366f1;
+        border-radius: 14px;
+        padding: 1.1rem 1.25rem;
+        margin: .75rem 0;
+        box-shadow: 0 7px 22px rgba(51,65,120,.055);
+        transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .publication-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px rgba(51,65,120,.10);
+    }
+
+    div[data-testid="stMetric"] {
+        background: rgba(255,255,255,.88);
+        border: 1px solid rgba(129,140,248,.18);
+        padding: 15px 16px;
+        border-radius: 16px;
+        box-shadow: 0 8px 22px rgba(51,65,120,.055);
+    }
+    div[data-testid="stMetric"] label { color: #64748b !important; }
+    div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+        color: #273c83;
+        font-weight: 800;
+    }
+
+    [data-testid="stTabs"] button {
+        border-radius: 10px 10px 0 0;
+        font-weight: 650;
+    }
+    [data-testid="stExpander"] {
+        background: rgba(255,255,255,.76);
+        border: 1px solid rgba(148,163,184,.2);
+        border-radius: 13px;
+    }
+    div.stButton > button, div.stDownloadButton > button {
+        border: 0;
+        border-radius: 11px;
+        color: white;
+        font-weight: 700;
+        background: linear-gradient(100deg, #2563eb, #7c3aed);
+        box-shadow: 0 7px 18px rgba(79,70,229,.18);
+    }
+    div.stButton > button:hover, div.stDownloadButton > button:hover {
+        color: white;
+        border: 0;
+        background: linear-gradient(100deg, #1d4ed8, #6d28d9);
+        box-shadow: 0 10px 24px rgba(79,70,229,.25);
+    }
+    [data-testid="stAlert"] { border-radius: 13px; }
+    hr { border-color: rgba(148,163,184,.22); }
+    a { color: #4f46e5 !important; font-weight: 600; }
     </style>
     """,
     unsafe_allow_html=True,
@@ -233,6 +339,7 @@ for i, (icon, title, desc) in enumerate(research_areas):
     with research_cols[i % 3]:
         st.markdown(f"**{icon} {title}**")
         st.caption(desc)
+        st.markdown("---")
 
 # ---------------------- Overview and expertise ----------------
 st.divider()
